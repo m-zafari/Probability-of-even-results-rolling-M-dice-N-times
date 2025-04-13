@@ -3,10 +3,10 @@
 
 import random, math
 
-def dice(N, rept):
+def dice(N, M):
     result = list()
     even_count = 0
-    for i in range(rept):
+    for i in range(M):
         temp_arry = list()
         odd_test = False
         for j in range(N):
@@ -18,7 +18,7 @@ def dice(N, rept):
         result.append(temp_arry)
         if not odd_test:
             even_count += 1 
-    return result, even_count / rept
+    return result, even_count / M
 
 #example
 if __name__ == "__main__":
